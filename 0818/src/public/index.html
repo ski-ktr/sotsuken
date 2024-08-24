@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TensorFlowConsole v0.01</title>
+    <!-- <link rel="stylesheet" href="public/style.css" type="text/css"> -->
+  </head>
+  <body>
+    <div>
+      <label for="name">NickName:</label>
+      <input type="text" id="name_text" name="name"/>
+    </div>
+    <div>
+      <label for="console">Console:</label>
+      <input type="button" id="start_button" name="console" value="Start"/>
+      <input type="button" id="stop_button" name="console" value="Stop"/>
+      <input type="button" id="userlist_button" name="console" value="UserList"/>
+      <input type="button" id="clear_button" name="console" value="Clear"/>
+    </div>
+    <div>
+      <label for="output">Output:</label>
+      <textarea id="output" name="output" rows="10" cols="60" readonly></textarea>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="public/script.js"></script>
+  </body>
+</html>
